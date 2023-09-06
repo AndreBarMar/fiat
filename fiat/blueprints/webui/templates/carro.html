@@ -1,0 +1,43 @@
+{% extends "index.html" %}
+{% block content %}
+<style>
+    body {
+        background-color: #333;
+        /* Cor de fundo escura para toda a página */
+        color: #635b5b;
+        /* Cor do texto branca para toda a página */
+    }
+
+    .navbar {
+        background-color: #333;
+        /* Cor de fundo escura para a navbar */
+    }
+
+    .navbar a {
+        color: #5f5959db;
+        /* Cor do texto branco para os links da navbar */
+    }
+
+    /* Estilo escuro para os botões */
+    .btn-dark {
+        background-color: #333;
+        /* Cor de fundo escura para os botões */
+        color: #fff;
+        /* Cor do texto branca para os botões */
+    }
+
+    .btn-dark:hover {
+        background-color: #555;
+        /* Cor de fundo mais escura quando o botão é hover */
+    }
+</style>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Nome: {{ carro.nome }}</h1>
+        <h2 class="display-5">Placa: {{ carro.placa }}</h2>
+        <p class="lead">Detalhe: {{ carro.detalhe }}</p>
+        <p class="lead">Preço: {{ carro.preco }}</p>
+    </div>
+</div>
+{% endblock %}
